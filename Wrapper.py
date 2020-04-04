@@ -21,4 +21,17 @@ Currently, this functionalities support 1D and 2D data.
 In case timestamps are not provided, data is assumed to be in ascending order.
 """
 
+from nibabel import streamlines
+
+from dipy.segment.clustering import QuickBundles
+from dipy.segment.metric import Metric, ResampleFeature
+#from dipy.io.pickles import save_pickle, load_pickle
+
+import geopy.distance
+
+import numpy as np
+
+from sklearn import metrics
+
+from scipy.stats import iqr
 
